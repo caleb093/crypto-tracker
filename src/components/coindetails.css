@@ -1,0 +1,47 @@
+.coin-details > h1 {
+    font-size: 1.5rem;
+}
+
+.grid-container-light, .grid-container-dark {
+    display: grid;
+    grid-template-columns: auto auto auto auto;
+    margin: 3% 3%;
+    grid-row-gap: 20px
+}
+
+.grid-item {
+    text-align: left;
+}
+
+.grid-header-light, .grid-header-dark {
+    padding-bottom: 10px;    
+}
+
+.grid-header-dark {
+    color: green;
+}
+
+.grid-header-light {
+    color: blue;
+}
+
+.grid-item > P {
+    font-size: clamp(0.7rem, 1.3vw, 1.3rem); 
+}
+
+.grid-container-dark > .grid-item > .grid-value {
+    font-weight: lighter;
+}
+
+@media screen and (max-width: 600px) {
+    .grid-container-light, .grid-container-dark {
+        margin: 3% 1.5%;
+        grid-row-gap: 20px
+    }   
+}
+
+@media  screen and (max-width: 400px) {
+    .grid-item > P {
+        font-size: 0.6rem; 
+    }
+}

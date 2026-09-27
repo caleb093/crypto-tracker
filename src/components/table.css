@@ -1,0 +1,124 @@
+/* styling pagination library */
+.pagination {
+    display: flex;
+    padding-bottom: 20px;
+    padding-right: 30%;
+    padding-left: 30%;
+}
+
+.page-item {
+    margin-left: auto;
+    margin-right: auto;
+    padding: 1%;
+} 
+.previous-link, .next-link {
+    cursor: pointer;
+}
+
+.page-link {
+    color: green;
+    padding: 6px 6px;
+    cursor: pointer;
+}
+
+.active {
+    background-color: rgb(142, 142, 142);
+    border-radius: 50%;
+}
+
+
+/* Styling Table*/
+.table-component {
+    padding: 3%;
+}
+
+table {
+    width: 100%;
+    font-size: clamp(0.7rem, 1.1vw, 1.4vw); 
+}
+
+tr,th,td {
+    padding: 15px;
+}
+
+.img-row {
+    text-align: left;
+    display: flex;
+    border: none;
+}
+
+span {
+    margin-top: auto;
+    margin-bottom: auto;
+}
+
+.number {
+    padding-right: 10px;
+}
+
+.coin-acronym {
+    padding-left: 5%;
+}
+
+.light-table {
+    border: 1px solid #b7b3b3;  
+    border-collapse: collapse;
+}
+
+.light-table > tbody > tr > th{
+/*    border: 1px solid; */
+    border-bottom-style: solid;
+    border-bottom-width: 0.5px;
+    border-bottom-color: #b7b3b3;
+    color: rgb(20, 20, 216);
+}
+
+.light-table > tbody > tr {
+    border-bottom-style: solid;
+    border-bottom-width: 0.1px;
+    border-bottom-color: #b7b3b3;
+}
+
+.dark-table {
+    border-collapse: collapse;
+}
+.dark-table > tbody > tr > th {
+    background-color: #232222;
+    border: none;
+    color: rgb(123, 233, 14);
+}
+
+.dark-table-body > tr  {
+    border-bottom-style: solid;
+    border-bottom-width: 1px;
+    border-bottom-color: rgb(74, 72, 72);
+}
+
+.dark-table-body > tr > td {
+    font-weight: lighter;
+}
+
+.light-table-body > tr:hover {background-color: #ddd;}
+.dark-table-body > tr:hover {background-color: rgb(69, 66, 66);}
+
+@media screen and (max-width: 600px) {
+    th, tr, td {
+        padding: 13px;
+
+    }
+    
+    .coin-icon {
+        width: 15px;
+    }
+
+    .pagination {
+        padding-right: 15%;
+        padding-left: 15%;
+    }
+
+    .page-item {
+        padding: 1px;
+    }
+
+}
+
